@@ -22,7 +22,7 @@ function Dropdown({onSelect, activeItem, items}) {
         {items && items.map((item, i) => ( 
           <a 
             className={`dropdown-item ${item.value === activeItem.value ? 'active' : null}`} 
-            href='#'
+            href='.#'
             key={i}
             onClick={e => selectItem(e, item.value)}
           >

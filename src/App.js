@@ -141,6 +141,7 @@ function App({web3, accounts, contracts}) {
       setOrders(orders);
     }
     init();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -159,6 +160,7 @@ function App({web3, accounts, contracts}) {
     if(typeof user.selectedToken !== 'undefined') {
       init();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user.selectedToken], () => {
     listener.unsubscribe();
   });
