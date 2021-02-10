@@ -29,7 +29,7 @@ function LoadingContainer() {
   }
 
   if (!isReady()) {
-    return <div>Please ensure you are connected to Rinkeby Test Network on Metamask.</div>;
+    return <div>Please install Metamask plugin and ensure you switch to Rinkeby Test Network.</div>;
   }
 
   return (
